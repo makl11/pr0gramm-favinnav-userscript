@@ -14,7 +14,7 @@ jQuery(function() {
   var data = jQuery.parseJSON(decodeURI($.cookie('me')));
   var link = jQuery("<a id='tab-fav' class='head-tab' href='/user/" + data.n + "/likes'>❤</a>");
   jQuery("#filter-link").before(link);
-  
+
 //Patch by https://github.com/jarlave
   if(/likes/.test(window.location.href)) {
     $('#tab-fav').addClass('active');
